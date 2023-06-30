@@ -104,7 +104,7 @@ class AutonomousClassification():
 
     def get_mask(self):
 
-        self.blur_crop = cv.GaussianBlur(self.img_crop, (5, 5), 0)     #**IS THIS NECESSARY?**
+        self.blur_crop = cv.GaussianBlur(self.img_crop, (5, 5), 0)
         self.blur_crop = cv.pyrMeanShiftFiltering(self.blur_crop, 30, 30, 3)
 
 
